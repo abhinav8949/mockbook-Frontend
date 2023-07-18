@@ -1,0 +1,254 @@
+.banner_section{
+    width: 100%;
+    /* float: left; */
+    background-image: url(../../assets/images/banner-bg.png);
+    height: auto;
+    background-size: cover;
+    padding-bottom: 45px;
+    object-fit: cover;
+}
+
+.clever_text {
+    width: 100%;
+    float: left;
+    color: #016e9f;
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.0;
+}
+
+.layout_padding {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.padding_0{
+    padding: 0px;
+}
+
+.read_bt_2 {
+    width: 100%;
+    float: left;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.read_bt_2 a{
+     width: 40%;
+     float: left;
+     font-size: 18px;
+     color: #ffffff;
+     text-align: center;
+     background-color: #016e9f;
+     border-radius: 30px;
+     padding: 10px 0px; 
+}
+.read_bt_2 a{
+     color: #ffffff;
+}
+.read_bt_2 a:hover{
+     color: #ffffff;
+     background-color: #121212;
+}
+.services_section {
+    width: 100%;
+    float: 0;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.what_text{
+     width: 100%;
+     float: left;
+     font-size: 26px;
+     color: #feca01;
+     font-weight: bold;
+     text-align: center;
+     text-transform: uppercase;
+}
+
+.services_text{
+     float: left;
+     font-size: 40px;
+     color: #212122;
+     font-weight: bold;
+     text-align: center;
+}
+
+/* ---------------- */
+
+.plane_main {
+    width: 100%;
+    float: left;
+    background-color: #F0FBFC;
+    height: auto;
+    padding: 20px 20px 10px 20px;
+    margin-top: 30px;
+    transition: .5s;
+}
+
+.plane_main:hover{
+    margin-left: -15px;
+    background-color: #016e9f;
+    color: #ffffff;
+    box-shadow: 0px 0px 4px 0px;
+}
+
+.plane_left{
+    width: 20%;
+    float: left;
+}
+.plane_right{
+    width: 80%;
+    float: left;
+}
+.icon_1{
+    width: 100%;
+    float: left;
+}
+.vision_text{
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    color: #212122;
+    font-weight: bold;
+}
+
+.completely_text{
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #212122;
+    font-weight: 500;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+.image_1{
+    width: 100%;
+    float: left;
+    background-image: url(../../assets/images/img-1.png);
+    height: auto;
+    padding-top: 80px;
+}
+.read_bt{
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+}
+
+.read_bt a{
+    width: 27%;
+    float: left;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #016e9f;
+    border-radius: 30px;
+    padding: 10px 0px; 
+}
+.read_bt a{
+    color: #ffffff;
+}
+.read_bt a:hover{
+    color: #ffffff;
+    background-color: #121212;
+}
+
+.read_bt_21{
+    width: 100%;
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.read_bt_21 a{
+    width: 27%;
+    float: right;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #016e9f;
+    border-radius: 30px;
+    padding: 10px 0px; 
+}
+.read_bt_21 a{
+    color: #ffffff;
+}
+.read_bt_21 a:hover{
+    color: #ffffff;
+    background-color: #121212;
+}
+
+
+/* ------------------- */
+/*** Section Title ***/
+.section-title {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 80px);
+    height: 2px;
+    top: 4px;
+    left: -40px;
+    background: #016e9f;
+    z-index: -1;
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: calc(100% + 120px);
+    height: 2px;
+    bottom: 5px;
+    left: -60px;
+    background: #016e9f;
+    z-index: -1;
+}
+
+.section-title.text-start::before {
+    width: calc(100% + 40px);
+    left: 0;
+}
+
+.section-title.text-start::after {
+    width: calc(100% + 60px);
+    left: 0;
+}
+
+
+/*** Service ***/
+.service-item {
+    background: #F0FBFC;
+    transition: .5s;
+}
+
+.service-item:hover {
+    margin-top: -10px;
+    background: #016e9f;
+}
+
+.service-item * {
+    transition: .5s;
+}
+
+.service-item:hover * {
+    color: #F0FBFC !important;
+}
+
+
+/*** Categories & Courses ***/
+.category img,
+.course-item img {
+    transition: .5s;
+}
+
+.category a:hover img,
+.course-item:hover img {
+    transform: scale(1.1);
+}
+
+

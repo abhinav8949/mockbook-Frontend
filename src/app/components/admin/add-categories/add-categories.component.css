@@ -1,0 +1,78 @@
+.contact_section {
+    width: 100%;
+    float: left;
+    background-image: url(../../../../assets/images/contact-bg.png);
+    height: auto;
+    background-size: cover;
+}
+
+.layout_padding {
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.contact_section_2 {
+    width: 100%;
+    float: left;
+}
+
+.contact_text {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    border-top: 2px solid #fff;
+    padding-top: 10px;
+}
+
+.email-bt {
+    background: #ffffff;
+    border: none;
+    color: #000000;
+    width: 100%;
+    height: 18px;
+    font-size: 18px;
+    padding: 20px;
+    font-family: Noto Serif;
+}
+
+.massage-bt {
+    background: #ffffff;
+    border: none;
+    color: #fff;
+    width: 100%;
+    height: 145px;
+    font-size: 18px;
+    padding: 20px;
+    font-family: Noto Serif;
+}
+
+.main_bt {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main_bt button {
+    width: 25%;
+    float: left;
+    background: #fddd33;
+    color: #000000;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 0px;
+    text-decoration: none;
+    font-family: Noto Serif;
+}
+
+.main_bt button:hover {
+    background-color: #ffffff;
+    color: #0bed16;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    margin-top: 30px;
+}

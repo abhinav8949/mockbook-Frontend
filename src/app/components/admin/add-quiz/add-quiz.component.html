@@ -1,0 +1,61 @@
+<div>
+    <div class="contact_section layout_padding">
+        <div class="container">
+            <h3 class="contact_text">Add Quiz</h3>
+            <div class="contact_section_2">
+                <div class="row">
+                    <div class="col-sm-6 offset-sm-3">
+                        <form (ngSubmit)="addQuiz()">
+                            <div class="form-group">
+                                <input type="tel" [(ngModel)]="addQuizData.title" class="email-bt"
+                                    placeholder="Quiz Title" name="title">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" [(ngModel)]="addQuizData.description" class="email-bt"
+                                    placeholder="Description" name="description">
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-sm-6">
+                                    <div>
+                                        <input type="text" [(ngModel)]="addQuizData.maxMarks" class="email-bt"
+                                            placeholder="Max Marks" name="maxMarks">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div>
+                                        <input type="text" [(ngModel)]="addQuizData.numberOfQuestions"
+                                            class="email-bt" placeholder="Total Question" name="numberOfQuestions">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-sm-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" [(ngModel)]="addQuizData.active"
+                                            role="switch" name="active" checked>
+                                        <label class="form-check-label" for="flexCheckChecked" style="color: aliceblue;">
+                                            Quiz Activation
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div>
+                                        <label class="form-check-label" for="flexCheckChecked" style="color: aliceblue;">Category</label>
+                                        <select [(ngModel)]="addQuizData.category.id" name="category" aria-label=".form-select-sm example">
+                                            <option selected *ngFor="let c of categories" value="{{c.id}}" > {{c.title}} </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="main_bt"><button>Submit</button></div>
+                        </form>
+
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>

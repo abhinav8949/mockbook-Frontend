@@ -1,0 +1,54 @@
+<div>
+    <!-- Login Form -->
+    <div class="contact_section py-3">
+        <div class="container">
+            <h1 class="contact_text">Login</h1>
+            <div class="row">
+                <div class="col-sm-6 offset-sm-3">
+                    <form #userLoginForm="ngForm" (ngSubmit)="loginFormJavaMySQL()">
+                        <div class="form-group">
+                            <input type="email" [(ngModel)]="loginData.email" class="input_tag"
+                                placeholder="Email/Username" name="Email" required #email="ngModel"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                            <div *ngIf="email.invalid && (email.dirty || email.touched)">
+                                <p class="invalid-text" *ngIf="email.errors?.required">*email is a required field!</p>
+                                <p class="invalid-text" *ngIf="email.errors?.pattern">*Enter valid email!!!</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span class="forget"><a style="color: rgb(241, 230, 7); cursor: pointer;">Forget
+                                    Password?</a></span>
+                            <input type="password" [(ngModel)]="loginData.password" class="input_tag"
+                                placeholder="Password" name="password" required #password="ngModel" minlength="5"
+                                maxlength="15">
+                            <div *ngIf="password.invalid && (password.dirty || password.touched)">
+                                <p class="invalid-text" *ngIf="password.errors?.required">*password is a required field!</p>
+                                <p class="invalid-text" *ngIf="password.errors?.minlength">*password has 5 char or above!</p>
+                            </div>
+                        </div>
+                        <div class="main_bt"><button [disabled]="userLoginForm.invalid">Submit</button></div>
+                    </form>
+
+                    <div>
+                        <div class="or-container">
+                            <div class="line-separator"></div>
+                            <div class="or-label">or</div>
+                            <div class="line-separator"></div>
+                        </div>
+                        <div class="d-grid">
+                            <button class="btn btn-sm btn-google text-uppercase "><img
+                                    src="https://img.icons8.com/color/16/000000/google-logo.png"> Login With
+                                Google</button>
+                        </div>
+                        <hr>
+                        <div class="mt-3" style="text-align: center; color: aliceblue;"><span>Not have an account
+                            </span><a style="color: rgb(241, 230, 7); cursor: pointer;" routerLink="/signup">Signup</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+</div>

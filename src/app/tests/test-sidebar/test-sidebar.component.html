@@ -1,0 +1,112 @@
+<div class="bttn py-3">
+  <span class="fas fa-bars"></span>
+</div>
+
+<!-- show test-sidebar if login -->
+<div *ngIf="isUserLogin; else showThat">
+  <nav class="flex-shrink-0 py-1 mt-2 sidebar align-items-center">
+    <div class="text">
+      <span routerLink="/user-dashboard/" style="font-family: serif; cursor: pointer;">MockBook</span>
+    </div>
+
+    <ul class="list-unstyled ps-0">
+      <li class="mb-1 active">
+        <a routerLink="/user-dashboard/quiz"
+          class="btn d-inline-flex align-items-center rounded border-0 collapsed">
+          Online Quiz
+        </a>
+      </li>
+
+      <li class="mb-1">
+        <a class="btn d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse"
+          data-bs-target="#dashboard-collapse" aria-expanded="false">
+          Learning DSA <i class="fas fa-caret-down first"></i>
+        </a>
+        <div class="collapse" id="dashboard-collapse">
+          <ul class="">
+            <li class="active"><a routerLink="/user-dashboard/learn"
+                class="text-decoration-none rounded">Learning1</a></li>
+            <li><a routerLink="/user-dashboard/learn" class="text-decoration-none rounded">Learning2</a></li>
+            <li><a routerLink="/user-dashboard/learn" class="text-decoration-none rounded">Learning3</a></li>
+            <li><a routerLink="/user-dashboard/learn" class="text-decoration-none rounded">Learning4</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <a class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse"
+          data-bs-target="#orders-collapse" aria-expanded="false">
+          Coding <i class="fas fa-caret-down first"></i>
+        </a>
+        <div class="collapse" id="orders-collapse">
+          <ul class="">
+            <li class="active"><a routerLink="/test-dashboard/learn" class="text-decoration-none rounded">C++</a>
+            </li>
+            <li><a routerLink="/user-dashboard/learn" class="text-decoration-none rounded">Java</a></li>
+            <li><a routerLink="/user-dashboard/learn" class="text-decoration-none rounded">Python</a></li>
+            <li><a routerLink="/user-dashboard/learn" class="text-decoration-none rounded">Returned</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="border-top my-3"></li>
+
+    </ul>
+  </nav>
+</div>
+
+<!-- show test sidebar if not login -->
+<ng-template #showThat>
+  <nav class="flex-shrink-0 py-1 mt-2 sidebar align-items-center">
+    <div class="text">
+      <span class="">MockBook</span>
+    </div>
+
+    <ul class="list-unstyled ps-0">
+      <li class="mb-1 active">
+        <a routerLink="/test-dashboard/" class="btn d-inline-flex align-items-center rounded border-0 collapsed">
+          Online Quiz
+        </a>
+        <!-- <div class="collapse" id="home-collapse">
+          <ul class=" ">
+            <li class="active"><a routerLink="/test-dashboard/" class=" text-decoration-none rounded">Online Quiz</a></li>
+            <li><a routerLink="/test-dashboard/test-learn" class="text-decoration-none rounded">Learning</a></li>
+            <li><a class=" text-decoration-none rounded">Blog</a></li>
+            <li><a class=" text-decoration-none rounded">Technology</a></li>
+          </ul>
+        </div> -->
+      </li>
+
+      <li class="mb-1">
+        <a class="btn d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse"
+          data-bs-target="#dashboard-collapse" aria-expanded="false">
+          Learning DSA <i class="fas fa-caret-down first"></i>
+        </a>
+        <div class="collapse" id="dashboard-collapse">
+          <ul class="">
+            <li class="active"><a routerLink="/test-dashboard/test-learn"
+                class="text-decoration-none rounded">Learning1</a></li>
+            <li><a routerLink="/test-dashboard/test-learn" class="text-decoration-none rounded">Learning2</a></li>
+            <li><a routerLink="/test-dashboard/test-learn" class="text-decoration-none rounded">Learning3</a></li>
+            <li><a routerLink="/test-dashboard/test-learn" class="text-decoration-none rounded">Learning4</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <a class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse"
+          data-bs-target="#orders-collapse" aria-expanded="false">
+          Coding <i class="fas fa-caret-down first"></i>
+        </a>
+        <div class="collapse" id="orders-collapse">
+          <ul class="">
+            <li class="active"><a routerLink="/test-dashboard/test-learn" class="text-decoration-none rounded">C++</a>
+            </li>
+            <li><a routerLink="/test-dashboard/test-learn" class="text-decoration-none rounded">Java</a></li>
+            <li><a routerLink="/test-dashboard/test-learn" class="text-decoration-none rounded">Python</a></li>
+            <li><a routerLink="/test-dashboard/test-learn" class="text-decoration-none rounded">Returned</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="border-top my-3"></li>
+
+    </ul>
+  </nav>
+</ng-template>

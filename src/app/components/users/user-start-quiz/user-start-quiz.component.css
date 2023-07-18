@@ -1,0 +1,25 @@
+.scrolling_wrapper{
+    height: 500px;
+    width: auto;
+	overflow-y: scroll;
+}
+
+.view_effect {
+    font-size: 18px;
+    font-family: serif;
+    margin-bottom: 10px;
+}
+
+.action_btn {
+    font-family: serif;
+    background-color: #016e9f;
+    color: #ffffff;
+    height: auto;
+    margin: 15px 15px;
+    padding: auto;
+}
+
+.user_txt {
+    font-size: 15px;
+    font-family: serif;
+}

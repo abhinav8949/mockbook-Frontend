@@ -1,0 +1,45 @@
+.view_effect {
+    font-size: 16px;
+    font-family: serif;
+}
+
+.modal_view {
+    background-color: #016e9f;
+    color: aliceblue;
+    font-size: 15px;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 15px 25px #656565;
+}
+
+.plane_main {
+    width: 40%;
+    float: right;
+    font-family: serif;
+    background-color: #ad08b9;
+    color: #ffffff;
+    height: auto;
+    /* padding: 20px 10px 0px 20px; */
+    padding: auto;
+    margin-bottom: 2px;
+    margin-top: 9px;
+}
+
+.action_btn {
+    /* width: 40%; */
+    float: right;
+    font-family: serif;
+    background-color: #016e9f;
+    color: #ffffff;
+    height: auto;
+    /* padding: 20px 10px 0px 20px; */
+    padding: auto;
+    
+}
+
+.user_txt {
+    font-size: 15px;
+    font-family: serif;
+}

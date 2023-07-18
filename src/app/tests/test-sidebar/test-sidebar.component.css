@@ -1,0 +1,92 @@
+
+ .bttn{
+	position: relative;
+	top: 5px;
+	left: 5px;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	background: #ffffff;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: left 0.4s ease;
+  }
+ .bttn.click{
+	left: 200px;
+  }
+  .bttn span{
+	color: #016d9fb4;
+	font-size: 20px;
+	line-height: 5px;
+  }
+  
+  .bttn.click span:before{
+	content: '\f00d';
+  }  
+
+ .sidebar {
+  position: relative;
+  width: 200px;
+  height: auto;
+  left: 0px;
+  background: #cafbffd8;
+  transition: left 0.4s ease;
+  
+}
+
+.sidebar .text{
+  font-size: 25px;
+  line-height: 55px;
+  text-align: center;
+  background: #cafbffd8;
+  color: black;
+  letter-spacing: 1px;
+}
+
+.sidebar.show {
+  left: 0px;
+}
+
+nav ul{
+  background: #F0FBFC;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+
+nav ul li{
+  line-height: 30px;
+  border-bottom: 1px solid rgba(42, 42, 42, 0.1);
+}
+
+nav ul li a{
+  position: relative;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 40px;
+  display: block;
+  width: 100%;
+  border-left: 4px solid transparent;
+}
+
+nav ul li a:hover{
+  background: #2088b89d;
+  color: #ffffff;
+}
+
+nav ul li.active{
+  background: #016d9fb4;
+  color: #ffffff;
+}
+
+nav ul ul li a:hover{
+  background: #2088b89d;
+  color: #ffffff;
+}
+
+nav ul ul li.active a{
+  background: #016d9fb4;
+  color: #ffffff;
+  border-left-color: #a621c4;
+}

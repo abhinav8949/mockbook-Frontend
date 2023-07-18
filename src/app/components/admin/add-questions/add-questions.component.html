@@ -1,0 +1,69 @@
+<div>
+    <div class="contact_section layout_padding">
+        <div class="container">
+            <h3 class="contact_text"> <a style="color: rgb(1, 190, 39);" routerLink="/admin-dashboard/view-questions/{{quizId}}/{{quizTitle}}"><i class="bi bi-arrow-left-square"></i></a> Add Questions in {{quizTitle}} Id:{{quizId}}</h3>
+            <div class="contact_section_2">
+                <div class="row">
+                    <div class="col-sm-6 offset-sm-3">
+                        <form (ngSubmit)="addQuestions()">
+                            <div class="form-group">
+                                <input type="tel" [(ngModel)]="addQuestionData.content" class="email-bt"
+                                    placeholder="Question Content" name="content">
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-sm-6">
+                                    <div>
+                                        <input type="text" [(ngModel)]="addQuestionData.option1" class="email-bt"
+                                            placeholder="Option1" name="option1">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div>
+                                        <input type="text" [(ngModel)]="addQuestionData.option2" class="email-bt"
+                                            placeholder="Option2" name="option2">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-sm-6">
+                                    <div>
+                                        <input type="text" [(ngModel)]="addQuestionData.option3" class="email-bt"
+                                            placeholder="Option3" name="option3">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div>
+                                        <input type="text" [(ngModel)]="addQuestionData.option4" class="email-bt"
+                                            placeholder="Option4" name="option4">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row form-group">
+                                <div class="col-sm-6">
+                                    <label class="select_text">Select Answer</label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <select aria-label="Default select example" [(ngModel)]="addQuestionData.answer" name="answer">
+                                        <option *ngIf="addQuestionData.option1" [value]="addQuestionData.option1">{{addQuestionData.option1}}</option>
+                                        <option *ngIf="addQuestionData.option2" [value]="addQuestionData.option2">{{addQuestionData.option2}}</option>
+                                        <option *ngIf="addQuestionData.option3" [value]="addQuestionData.option3">{{addQuestionData.option3}}</option>
+                                        <option *ngIf="addQuestionData.option4" [value]="addQuestionData.option4">{{addQuestionData.option4}}</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- <div class="form-group">
+                                <input type="file" [(ngModel)]="addQuestionData.image" placeholder="image" name="image">
+                            </div> -->
+
+                            <div class="main_bt"><button>Submit</button></div>
+                        </form>
+
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>

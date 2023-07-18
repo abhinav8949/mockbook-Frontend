@@ -1,0 +1,31 @@
+.scrolling_wrapper{
+    height: 200px;
+    width: fit-content;
+	overflow-y: scroll;
+}
+
+.view_effect {
+    font-size: 16px;
+    font-family: serif;
+}
+
+.card:hover {
+    /* transform: translateY(-5px) scale(1.005) translateZ(0); */
+    box-shadow: 0 10px 8px #6565654f;
+    /* transition: .5s; */
+    
+
+}
+
+.action_btn {
+    /* width: 40%; */
+    float: right;
+    font-family: serif;
+    background-color: #016e9f;
+    color: #ffffff;
+    height: auto;
+    /* padding: 20px 10px 0px 20px; */
+    padding: auto;
+    
+}
+

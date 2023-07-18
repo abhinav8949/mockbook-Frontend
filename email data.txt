@@ -1,0 +1,4 @@
+username : *********@gmail.com
+password: ************
+server: smtp.elasticemail.com
+port: 2525

@@ -1,0 +1,75 @@
+<div class="container py-3 px-4" style="margin-left: 15px;">
+  <div class="card view_effect ">
+    <div class="card-header text-center">
+      Read the instruction carefully of Quiz Category: {{catTitle}}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title" style="text-align: center;">Exam Name: <b>{{quizzes.title | uppercase}}</b></h5>
+      <span class="card-text">
+        <p>Exam Code: <b>MBQ{{quizzes.id}}-23 </b> </p>
+        <p>Description- {{quizzes.description}}</p>
+        <ul>
+          <div class="row">
+            <div class="col">
+              <li>Total Marks: {{quizzes.maxMarks}}</li>
+            </div>
+            <div class="col">
+              <li>Total Questions: {{quizzes.numberOfQuestions}} </li>
+            </div>
+            <div class="col">
+              <li>Time: {{quizzes.numberOfQuestions*2}} minutes </li>
+            </div>
+          </div>
+          <li>It is an Online Examination system, fully computerized, user friendly having advanced
+            security features making it fair, transparent and standardized.</li>
+          <li>
+            Candidates are requested to take the test honestly, ethically, and should follow all the
+            instructions.
+          </li>
+          <li>Avoid using your phone, as all your activities will be recorded. Also, strict action will be taken if we
+            see any violation of the code of conduct.</li>
+        </ul>
+        <div class="scrolling_wrapper">
+          <b>A. General information:</b>
+          <ol type="1">
+            <li>The examination will comprise of Objective type Multiple Choice Questions (MCQs)</li>
+            <li>All questions are compulsory and each carries One mark.</li>
+            <li>The total number of questions, duration of examination, will be different based on
+              the course, the detail is available on your screen.</li>
+            <li>There will be NO NEGATIVE MARKING for the wrong answers.</li>
+          </ol>
+
+          <b>B. Information & Instructions:</b>
+          <ol>
+            <li>The examination does not require using any paper, pen, pencil and calculator.</li>
+            <li>Every student will take the examination on a Laptop/Desktop/Smart Phone.</li>
+            <li>On computer screen every student will be given objective type Multiple Choice
+              Questions (MCQs).</li>
+            <li>Each student will get questions and answers in different order selected randomly
+              from a fixed Question Databank.</li>
+            <li>The students just need to click on the Right Choice / Correct option from the
+              multiple choices /options given with each question. For Multiple Choice Questions,
+              each question has four options, and the candidate has to click the appropriate
+              option.</li>
+            <li>Exam will auto submitted and save when time limit reach to zero.</li>
+          </ol>
+
+          <b>C. Extra Exam Attempt Will not be provided if,</b>
+          <ol>
+            <li>Student fails to appear for exam within specified timings.</li>
+            <li>Student does not appear the papers.</li>
+            <li>Student appears for exam late / face lack of time.</li>
+            <li>Student ignores instructions and rules.</li>
+            <li>Student does not submit the exam properly.</li>
+            <li>Student face internet of power failure problems.</li>
+          </ol>
+          <b>Important: Do not click the “End Test” button unless you want to leave early.</b>
+        </div>
+        <p class="text-center mt-2">Best Of Luck...</p>
+      </span>
+      <button (click)="startQuiz()" class="btn btn-sm action_btn">Start Exam</button>
+    </div>
+  </div>
+
+
+</div>

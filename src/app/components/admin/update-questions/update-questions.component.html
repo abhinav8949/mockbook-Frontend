@@ -1,0 +1,69 @@
+<div>
+    <div class="contact_section layout_padding">
+        <div class="container">
+            <h3 class="contact_text">Update QuestionsID- 2</h3>
+            <div class="contact_section_2">
+                <div class="row">
+                    <div class="col-sm-6 offset-sm-3">
+                        <form (ngSubmit)="updateQuestion()">
+                            <div class="form-group">
+                                <input type="tel" [(ngModel)]="updateQuestionData.content" class="email-bt"
+                                    placeholder="Question Content" name="content">
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-sm-6">
+                                    <div>
+                                        <input type="text" [(ngModel)]="updateQuestionData.option1" class="email-bt"
+                                            placeholder="Option1" name="option1">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div>
+                                        <input type="text" [(ngModel)]="updateQuestionData.option2" class="email-bt"
+                                            placeholder="Option2" name="option2">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-sm-6">
+                                    <div>
+                                        <input type="text" [(ngModel)]="updateQuestionData.option3" class="email-bt"
+                                            placeholder="Option3" name="option3">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div>
+                                        <input type="text" [(ngModel)]="updateQuestionData.option4" class="email-bt"
+                                            placeholder="Option4" name="option4">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row form-group">
+                                <div class="col-sm-6">
+                                    <label class="select_text">Select Answer</label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <select aria-label="Default select example" [(ngModel)]="updateQuestionData.answer" name="answer">
+                                        <option *ngIf="updateQuestionData.option1" [value]="updateQuestionData.option1">{{updateQuestionData.option1}}</option>
+                                        <option *ngIf="updateQuestionData.option2" [value]="updateQuestionData.option2">{{updateQuestionData.option2}}</option>
+                                        <option *ngIf="updateQuestionData.option3" [value]="updateQuestionData.option3">{{updateQuestionData.option3}}</option>
+                                        <option *ngIf="updateQuestionData.option4" [value]="updateQuestionData.option4">{{updateQuestionData.option4}}</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- <div class="form-group">
+                                <input type="file" [(ngModel)]="addQuestionData.image" placeholder="image" name="image">
+                            </div> -->
+
+                            <div class="main_bt"><button>Submit</button></div>
+                        </form>
+
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>

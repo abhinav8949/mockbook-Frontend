@@ -1,0 +1,54 @@
+<div>
+    <div class="row">
+        <div class="col-md-6">
+            <h4 style="font-family: serif; font-size: small;"> <a
+                    routerLink="/admin-dashboard/view-quiz/{{quizId}}/{{quizTitle}}">Back</a> Question of Quiz:
+                {{quizTitle}}</h4>
+        </div>
+        <div class="col-sm-6">
+            <a routerLink="/admin-dashboard/add-questions/{{quizId}}/{{quizTitle}}" class="btn btn-sm plane_main">Add
+                Questions</a>
+        </div>
+    </div>
+
+    <div class="container mt-1">
+        <div *ngIf="questions.length>0; else showThis">
+            <div class="card my-1" *ngFor="let ques of questions">
+                <div class="card-body admin_txt">
+                    <b>Q){{ques.id}} </b>
+                    <span> {{ques.content}}</span>
+                    <div class="row ">
+                        <div class="col-md-6">
+                            <b>1. {{ques.option1}} </b>
+                        </div>
+                        <div class="col-md-6">
+                            <b>2. {{ques.option2}} </b>
+                        </div>
+                        <div class="col-md-6">
+                            <b>3. {{ques.option3}} </b>
+                        </div>
+                        <div class="col-md-6">
+                            <b>4. {{ques.option4}} </b>
+                        </div>
+                    </div>
+                    <div class="">
+                        <span>Answer: {{ques.answer}} </span>&nbsp;
+                        <button (click)="deleteQuestion(ques.id)" style="background-color: crimson;"
+                            class="btn btn-sm action_btn mx-2"><i class="bi bi-trash"></i></button>
+                        <button routerLink="/admin-dashboard/update-questions"
+                            style="background-color: rgb(123, 125, 123);" class="btn btn-sm action_btn"><i
+                                class="bi bi-pencil-square"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ng-template #showThis>
+            <div class="alert alert-danger" role="alert">
+                <h4 style="font-family: serif; font-size: small;">No Question in this Quiz: {{quizTitle}}</h4>
+            </div>
+        </ng-template>
+
+    </div>
+
+
+</div>

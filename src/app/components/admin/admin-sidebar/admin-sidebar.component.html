@@ -1,0 +1,53 @@
+<div class="vision_mid">
+    <div class="list-group text-center">
+        <div class=" vision_text">
+            <a routerLink="/admin-dashboard/" class="list-group-item list-group-item-action active plane_main">
+                Welcome Admin
+            </a>
+        </div>
+
+        <div class="vision_text_2">
+            <div>
+                <a routerLink="/admin-dashboard/view-categories"
+                    class="badge list-group-item list-group-item-action plane_main"><i class="bi bi-card-list"></i> View
+                    Exam Category</a>
+                <a routerLink="/admin-dashboard/add-categories"
+                    class="badge list-group-item list-group-item-action plane_main"><i
+                        class="bi bi-database-fill-add"></i> Add Exam Category</a>
+                <a routerLink="/admin-dashboard/add-quiz"
+                    class="badge list-group-item list-group-item-action plane_main"><i
+                        class="bi bi-file-earmark-plus"></i> Add Quiz In Category</a>
+                <!-- Button trigger modal -->
+                <a style="cursor: pointer;" class="badge list-group-item list-group-item-action plane_main"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="bi bi-graph-up-arrow"></i> Add Question In Quiz
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content view_effect">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Notice</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Hey Admin please go to <a routerLink="/admin-dashboard/view-categories"><i
+                                class="bi bi-card-list"></i> View
+                            Exam Category</a> section and click View Quiz of that category after that
+                        you can click on ViewQsn of that particular quiz the add question in that particular quiz.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
