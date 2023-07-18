@@ -1,16 +1,24 @@
-## Mocktest- Frontend
+## MockTest- Frontend (Angular)
+This is `MockBook` exam portal developed by Angular16.0, all router path are protected with AuthGuard with token value and interceptor has token in header
+so that every request authorize from backend Bearer token value.
 
-This is `MockBook` frontend developed by using angular and getting data from SpringBoot backend
+#### Functionalities
+* Application is fully secured with AuthGuard based authentication on frontend side and getting data from springboot server.
+* There is role based login in application where users has login as NORMAL USER or ADMIN USER.
+* Login with google is implemented using firebase and OAuth2.
+* Secured Registration of user.
+* Admin has access performs operations such as Create, Read, Update and Delete.
+* Users has only access to View Questions related API response on dashboard.
+* User start any quiz from anyone category and attempt test and submit to see his/her result.
+* In the duration of test user Web Camera enabled recording is streamed and sync data to firestore.
+* Version2.0 of this test portal is under working with fully implemented architecture where more functionality are integrated.
 
-#### Functionality
-* This is
-
-### Requirement
-* `Node18.0`, `Angular16.0`
-* Clone this project in folder.
-* Open cmd in this folder and run `npm install` to install all necessary dependecies.
-* Open cmd fire `ng serve` go to `http://localhost:4200`.
-* (Make sure your backend is running on port:8182)
+### Requirements
+* `Node18.0(LTS)`, `Angular16.0`, `Vs-Code`.
+* Clone this project in local folder.
+* Open cmd and run `npm install` to install all necessary dependencies.
+* Run `ng serve` in cmd hit `http:localhost:4200`.
+* Make sure your springboot backend is running.
 
 ### Screenshorts
 #### User UI (ROLE_NORMAL)
@@ -29,10 +37,11 @@ This is `MockBook` frontend developed by using angular and getting data from Spr
 <img width="947" alt="16" src="https://github.com/abhinav8949/mockbook-frontend/assets/63671705/c1cce9b0-7346-4dd9-b4e8-e6161db49f31">
 <img width="519" alt="12" src="https://github.com/abhinav8949/mockbook-frontend/assets/63671705/1d248b16-a95c-40e3-9856-4f01b2dd6df2">
 
-
 #### Admin UI (ROLE_ADMIN)
 <img width="946" alt="001" src="https://github.com/abhinav8949/mockbook-frontend/assets/63671705/eee36fd8-ecd7-423a-b450-d096254165f0">
 <img width="946" alt="002" src="https://github.com/abhinav8949/mockbook-frontend/assets/63671705/80a30684-459c-48b1-a951-f0ea5916d092">
 <img width="943" alt="003" src="https://github.com/abhinav8949/mockbook-frontend/assets/63671705/67608097-b37b-424b-af76-58024dc22ad4">
+
+#### ****** Thanks******
 
 
