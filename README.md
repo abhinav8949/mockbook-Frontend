@@ -25,7 +25,9 @@ This is `MockBook` frontend developed by using angular and getting data from Spr
 <img width="947" alt="9" src="https://github.com/abhinav8949/mockbook-frontend/assets/63671705/42ef6b85-c555-453d-8d3a-b761c74c1960">
 <img width="746" alt="10" src="https://github.com/abhinav8949/mockbook-frontend/assets/63671705/2228aa19-4d59-484b-b043-1642c37b3a7e">
 <img width="947" alt="11" src="https://github.com/abhinav8949/mockbook-frontend/assets/63671705/ad338a3b-d5e8-4f6e-bb02-1cb8e4d781ad">
-![15](https://github.com/abhinav8949/mockbook-frontend/assets/63671705/2c71e671-8231-47e2-b296-c595a643a1fc)
+
+<img width="947" alt="15" src="https://github.com/abhinav8949/mockbook-frontend/assets/63671705/2c71e671-8231-47e2-b296-c595a643a1fc">
+
 ![16](https://github.com/abhinav8949/mockbook-frontend/assets/63671705/c1cce9b0-7346-4dd9-b4e8-e6161db49f31)
 <img width="519" alt="12" src="https://github.com/abhinav8949/mockbook-frontend/assets/63671705/1d248b16-a95c-40e3-9856-4f01b2dd6df2">
 
