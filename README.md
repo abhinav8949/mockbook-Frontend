@@ -1,7 +1,7 @@
 ## MockTest- Frontend (Angular)
 This is `MockBook` exam portal developed by Angular16.0, all router path are protected with AuthGuard with token value and interceptor has token in header
 so that every request authorize from backend Bearer token value.
-see backend from this `[https://github.com/abhinav8949/mockbook-Backend.git]`.
+see backend from this [`https://github.com/abhinav8949/mockbook-Backend.git`].
 
 #### Functionalities
 * Application is fully secured with AuthGuard based authentication on frontend side and getting data from springboot server.
